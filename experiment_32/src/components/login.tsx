@@ -56,32 +56,30 @@ const Login: React.FC = () => {
 
         <form id="loginForm" onSubmit={ handleSubmit }>
           <div>
-            <div>
-              <label htmlFor="username">User: *</label>
-              <input
-                type="text"
-                id="username"
-                value={ username }
-                onChange={ (e) => setUsername(e.target.value) }
-                required
-              />
-            </div>
+            <label htmlFor="username">User: *</label>
+            <input
+              type="text"
+              id="username"
+              value={ username }
+              onChange={ (e) => setUsername(e.target.value) }
+              required
+            />
+          </div>
 
-            <div>
-              <label htmlFor="password">Password: *</label>
-              <input
-                type="password"
-                id="password"
-                value={ password }
-                onChange={ (e) => setPassword(e.target.value) }
-                required
-              />
-            </div>
+          <div>
+            <label htmlFor="password">Password: *</label>
+            <input
+              type="password"
+              id="password"
+              value={ password }
+              onChange={ (e) => setPassword(e.target.value) }
+              required
+            />
+          </div>
 
-            <div>
-              <label htmlFor="_spring_security_remember_me">Remember me:</label>
-              <input type="checkbox" id="_spring_security_remember_me"/>
-            </div>
+          <div>
+            <label htmlFor="_spring_security_remember_me">Remember me:</label>
+            <input type="checkbox" id="_spring_security_remember_me"/>
           </div>
 
           <button type="submit">Login</button>

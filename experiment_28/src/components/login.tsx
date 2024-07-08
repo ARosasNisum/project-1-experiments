@@ -64,7 +64,9 @@ const Login: React.FC = () => {
               onChange={ (e) => setUsername(e.target.value) }
               required
             />
+          </div>
 
+          <div>
             <label htmlFor="password">Password: *</label>
             <input
               type="password"
@@ -73,12 +75,14 @@ const Login: React.FC = () => {
               onChange={ (e) => setPassword(e.target.value) }
               required
             />
+          </div>
 
+          <div>
             <label htmlFor="_spring_security_remember_me">Remember me:</label>
             <input type="checkbox" id="_spring_security_remember_me"/>
-
-            <button type="submit">Login</button>
           </div>
+
+          <button type="submit">Login</button>
         </form>
       </div>
   );

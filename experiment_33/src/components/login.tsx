@@ -82,7 +82,7 @@ const Login: React.FC = () => {
             <input type="checkbox" id="_spring_security_remember_me"/>
           </div>
 
-          <button type="submit" id="login">Login</button>
+          <button type="submit">Login</button>
         </form>
       </div>
   );
