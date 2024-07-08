@@ -7,11 +7,11 @@ const Template: React.FC = () => {
       <header id="header">
         <h1><a href="/">CustomLoginPage with Spring-Security and JSF</a></h1>
       </header>
-      <div id="container">
-        <main id="content">
+      <main id="container">
+        <div id="content">
           <Outlet/>
-        </main>
-      </div>
+        </div>
+      </main>
       <footer id="footer"></footer>
     </div>
   );
